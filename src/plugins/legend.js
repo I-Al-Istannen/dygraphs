@@ -120,7 +120,9 @@ Legend.prototype.select = function(e) {
       leftLegend = leftLegend - 2 * 50 - labelsDivWidth - (yAxisLabelWidth - area.x);
     }
 
-    e.dygraph.graphDiv.appendChild(this.legend_div_);
+    if(!e.dygraph.graphDiv.contains(this.legend_div_)) {
+      e.dygraph.graphDiv.appendChild(this.legend_div_);
+    }
     this.legend_div_.style.left = yAxisLabelWidth + leftLegend + "px";
     this.legend_div_.style.top = topLegend + "px";
   }
