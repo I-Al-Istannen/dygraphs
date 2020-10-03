@@ -49,7 +49,7 @@ crosshair.prototype.select = function (e) {
 
   var ctx = this.canvas_.getContext("2d");
   ctx.clearRect(0, 0, width, height);
-  ctx.strokeStyle = "rgba(0, 0, 0,0.3)";
+  ctx.strokeStyle = e.dygraph.getOption("crosshairColor");
   ctx.beginPath();
 
   var canvasx = Math.floor(e.dygraph.selPoints_[0].canvasx) + 0.5; // crisper rendering

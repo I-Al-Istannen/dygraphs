@@ -82,6 +82,9 @@ var DEFAULT_ATTRS = {
   rangeSelectorAlpha: 0.6,
   showInRangeSelector: null,
 
+  // Crosshair options
+  crosshairColor: 'rgba(0, 0, 0, 0.3)',
+
   // The ordering here ensures that central lines always appear above any
   // fill bars/error bars.
   plotter: [

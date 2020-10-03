@@ -860,6 +860,7 @@ var pixelSafeOptions = {
   'rangeSelectorForegroundStrokeColor': true,
   'rangeSelectorForegroundLineWidth': true,
   'rangeSelectorAlpha': true,
+  'crosshairColor': true,
   'showLabelsOnHighlight': true,
   'showRoller': true,
   'strokeWidth': true,

@@ -786,6 +786,12 @@ OPTIONS_REFERENCE =  // <JSON>
     "type": "boolean",
     "description": "Mark this series for inclusion in the range selector. The mini plot curve will be an average of all such series. If this is not specified for any series, the default behavior is to average all the visible series. Setting it for one series will result in that series being charted alone in the range selector. Once it's set for a single series, it needs to be set for all series which should be included (regardless of visibility)."
   },
+  "crosshairColor": {
+    "default": "rgba(0, 0, 0, 0.3)",
+    "labels": ["Crosshair"],
+    "type": "string",
+    "description": "The color for the crosshair."
+  },
   "animatedZooms": {
     "default": "false",
     "labels": ["Interactive Elements"],
