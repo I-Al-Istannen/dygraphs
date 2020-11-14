@@ -844,6 +844,7 @@ var valid_cats = [
  'Chart labels',
  'CSV parsing',
  'Callbacks',
+ 'Crosshair',
  'Data',
  'Data Line display',
  'Data Series Colors',

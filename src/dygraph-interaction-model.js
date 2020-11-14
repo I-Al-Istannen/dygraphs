@@ -632,6 +632,15 @@ var distanceFromChart = function(event, g) {
  * } );
  */
 DygraphInteraction.defaultModel = {
+
+  // Treat the context menu as a mouse click
+  contextmenu: function(event, g, context) {
+    event.preventDefault()
+    context.initializeMouseDown(event, g, context)
+    DygraphInteraction.maybeTreatMouseOpAsClick(event, g, context);
+    context.destroy()
+  },
+
   // Track the beginning of drag events
   mousedown: function(event, g, context) {
     // Right-click should not initiate a zoom.
